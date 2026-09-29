@@ -147,7 +147,10 @@
   document.querySelectorAll('.cc-tvideo').forEach(function (btn) {
     var id = btn.getAttribute('data-youtube-id');
     if (!id) return;
-    btn.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + encodeURIComponent(id) + '/hqdefault.jpg)';
+    // Use the YouTube thumbnail as poster only when opted in (data-thumb="youtube")
+    if (btn.getAttribute('data-thumb') === 'youtube') {
+      btn.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + encodeURIComponent(id) + '/hqdefault.jpg)';
+    }
 
     btn.addEventListener('click', function () {
       if (brandVideo) brandVideo.pause();
