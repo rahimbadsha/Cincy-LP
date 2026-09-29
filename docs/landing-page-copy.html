@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cover Cincy Landing Page — Copy &amp; Brand Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --red:#a72a2c; --ink:#1a1a1a; --gray:#5a5a5f; --line:#e4e4e7; --soft:#f6f6f7; --bg:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ececee; --gray:#a1a1a6; --line:#2e2e32; --soft:#1c1c1f; --bg:#121214; --red:#e0585a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 Inter, system-ui, sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:40px 20px 80px; }
+  h1, h2, h3 { font-family:"Space Grotesk", sans-serif; line-height:1.2; letter-spacing:-0.01em; }
+  h1 { font-size:34px; margin:0 0 8px; }
+  h2 { font-size:24px; margin:48px 0 14px; padding-top:24px; border-top:1px solid var(--line); }
+  h3 { font-size:19px; margin:28px 0 10px; }
+  a { color:var(--red); }
+  hr { border:0; margin:0; }
+  code { font:14px/1.4 ui-monospace, Menlo, monospace; background:var(--soft); padding:2px 6px; border-radius:5px; word-break:break-all; }
+  blockquote { margin:16px 0; padding:12px 16px; border-left:4px solid var(--red); background:var(--soft); border-radius:0 8px 8px 0; }
+  blockquote p { margin:0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--soft); font-weight:600; }
+  li { margin:4px 0; }
+  .tag { display:inline-block; font:600 11px/1 Inter, sans-serif; letter-spacing:.04em; padding:4px 7px; border-radius:999px; vertical-align:middle; }
+  .tag-client { background:#a72a2c; color:#fff; }
+  .tag-draft { background:#e4e4e7; color:#1a1a1a; }
+  .tag-placeholder { background:#fff3cd; color:#7a5a00; }
+  .swatch { display:inline-block; width:14px; height:14px; border-radius:3px; vertical-align:-2px; margin-right:6px; border:1px solid var(--line); }
+</style>
+</head>
+<body>
+<main id="doc"></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+  const md = "# Cover Cincy Landing Page \u2014 Copy & Brand Reference\n\nSource of truth for page text. Items marked **[CLIENT]** come from the client brief (don't change without approval).\nItems marked **[DRAFT]** are our supporting copy \u2014 client can approve or edit.\nItems marked **[PLACEHOLDER]** need real content from the client.\n\n---\n\n## Global\n\n| Element | Copy |\n|---|---|\n| Page title (SEO) | Free Health Insurance Consult for the Self-Employed \\| Cover Cincy **[DRAFT]** |\n| Meta description | Local, independent health insurance help since 1988. Book a free 15-minute consult with a licensed Cincinnati broker who works for you, not the carriers. **[DRAFT]** |\n| Phone | (513) 800-2255 \u2014 `tel:+15138002255` |\n| Navigation | None. Logo is not a link. No external links (except privacy policy in footer \u2014 see open items). |\n\n---\n\n## Section 1 \u2014 Hero\n\n- Eyebrow: Cincinnati's independent health insurance broker **[DRAFT]**\n- Headline: **Health insurance help from someone who actually works for you.** **[CLIENT]**\n- Subhead: **Local, independent, since 1988. Free consult.** **[CLIENT]**\n- Primary CTA: **Book Your Free Consult** \u2192 scrolls to booking calendar (`#book`) **[CLIENT]**\n- CTA microcopy: Free \u00b7 15 minutes \u00b7 No obligation **[DRAFT]**\n- Trust badges: **A+ BBB \u00b7 Since 1988 \u00b7 Licensed Nationwide** **[CLIENT]**\n\nDesktop side card (\"What happens on your call\") **[DRAFT]**:\n- Title: Your free 15-minute consult\n- We review what you have now (or don't)\n- We compare private and Marketplace options side by side\n- You get a straight answer \u2014 no pressure, no obligation\n- Footer line: Built for the self-employed, freelancers & small business owners\n\n---\n\n## Section 2 \u2014 Brand Message Video\n\n- Heading: **See what makes us different.** **[CLIENT]**\n- Video: muted autoplay, captions on, sound on tap/click **[CLIENT]**\n- Sound button label: Tap for sound **[DRAFT]**\n- CTA below video: **Book Your Free Consult** **[CLIENT]**\n- Video file: **[PLACEHOLDER]** \u2014 prototype uses existing YouTube video `gaUNawXf3A8` (\"As Seen On Ask the Expert\"). Final: MP4 + captions file (.vtt) from client.\n\n---\n\n## Section 3 \u2014 Testimonials\n\n- Heading / trust line: **Real Cincinnati families. Real coverage that shows up.** **[CLIENT]**\n- Supporting line: Hear it from the people we've helped. **[DRAFT]**\n- 2\u20133 real client testimonial videos **[CLIENT]**\n  - Video 1: **[PLACEHOLDER]** \u2014 client name, neighborhood, video\n  - Video 2: **[PLACEHOLDER]**\n  - Video 3: **[PLACEHOLDER]**\n- CTA: **Book Your Free Consult** **[CLIENT]**\n\n> Never write fake testimonials or names. Only real client content.\n\n---\n\n## Section 4 \u2014 Booking Block (`#book`)\n\n- Heading: Pick a time for your free consult. **[DRAFT]**\n- Reassurance: **Free \u00b7 No obligation \u00b7 15 minutes \u00b7 We work for you, not the insurance carriers.** **[CLIENT]**\n- Calendar: HubSpot Meetings embed, full width, minimal fields **[CLIENT]**\n  - Prototype link: `https://meetings.hubspot.com/aruhlman/u11?embed=true`\n    (the same round-robin link the live /book page uses for Ohio + under-65 health: Ashton, William, Jeff, McKala)\n- Phone fallback: Prefer to talk now? Call (513) 800-2255 **[CLIENT]**\n- Trust strip: official BBB A+ seal + USA Benefits Group \"Established 1988\" badge\n\n## Footer\n- \u00a9 {year} Cover Cincy \u00b7 A USA Benefits Group agency **[DRAFT]**\n- Privacy Policy link **[DRAFT \u2014 see open items]**\n\n## Mobile sticky bar\n- Shows after hero CTA scrolls away, hides when booking block is visible.\n- Button: Book Free Consult \u00b7 Phone icon button \u2192 call.\n\n---\n\n## Brand tokens\n\n| Token | Value | Use |\n|---|---|---|\n| Red | `#A72A2C` | Primary CTA, accents (from live site) |\n| Red dark | `#8A2224` | CTA hover |\n| Black | `#0F0F10` | Hero / dark sections |\n| Ink | `#1A1A1A` | Body text on light |\n| Gray 600 | `#5A5A5F` | Secondary text |\n| Gray 100 | `#F3F3F4` | Light section background |\n| White | `#FFFFFF` | |\n| Headings font | Space Grotesk (used on live site) | |\n| Body font | Inter | |\n\nNavy `#253A5E` from the live site is intentionally NOT used (brief: gray, black, white, red).\n\n## Assets (currently hosted on client's Webflow CDN \u2014 re-upload to HubSpot File Manager at build time)\n\n- Logo (round badge): `https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/663cdd6e630974f7c335ea5f_CoverCincy%20(1).png`\n- BBB A+ seal: `https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32988ebc7e09d5bc9d1e3_logo.bbb.png`\n- USABG 1988 badge: `https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32989155a2f3aa52f5092_static-logos-usabg-badge-1988.png`\n\n## Open items (ask client)\n\n1. Brand video MP4 + .vtt captions.\n2. 2\u20133 testimonial videos + client names/neighborhoods (with permission).\n3. Confirm landing page should book into the `u11` round-robin link \u2014 or create a **new, separate** meeting link with minimal fields (don't edit `u11`; the live /book page uses it).\n4. OK to include a Privacy Policy link in footer? (Recommended for paid social ads.)\n5. HubSpot plan level (user providing).\n";
+  const el = document.getElementById('doc');
+  el.innerHTML = marked.parse(md);
+  // Wrap tables for mobile scrolling
+  el.querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'table-wrap'; t.replaceWith(w); w.appendChild(t); });
+  // Colour-code [CLIENT] / [DRAFT] / [PLACEHOLDER] labels
+  el.innerHTML = el.innerHTML
+    .replace(/<strong>\[CLIENT\]<\/strong>/g, '<span class="tag tag-client">CLIENT</span>')
+    .replace(/<strong>\[DRAFT([^\]]*)\]<\/strong>/g, '<span class="tag tag-draft">DRAFT$1</span>')
+    .replace(/<strong>\[PLACEHOLDER\]<\/strong>/g, '<span class="tag tag-placeholder">PLACEHOLDER</span>');
+  // Colour swatches next to hex codes
+  el.querySelectorAll('code').forEach(c => {
+    if (/^#[0-9a-f]{6}$/i.test(c.textContent)) c.insertAdjacentHTML('beforebegin', '<span class="swatch" style="background:' + c.textContent + '"></span>');
+  });
+</script>
+</body>
+</html>
