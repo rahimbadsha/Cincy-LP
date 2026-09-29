@@ -22,7 +22,8 @@ Items marked **[PLACEHOLDER]** need real content from the client.
 - Headline: **Health insurance help from someone who actually works for you.** **[CLIENT]**
 - Subhead: **Local, independent, since 1988. Free consult.** **[CLIENT]**
 - Primary CTA: **Book Your Free Consult** → scrolls to booking calendar (`#book`) **[CLIENT]**
-- Secondary link: Watch video → scrolls to brand video (`#video`) **[DRAFT]**
+- Under CTA: Free · 15 minutes · No obligation **[CLIENT]**
+- Mobile/tablet: headline + subhead centered · Desktop: left-aligned
 - Trust badges: **A+ BBB · Since 1988 · Licensed Nationwide** **[CLIENT]**
 
 Team card (desktop: 2×2 photo grid · mobile: avatar row) **[DRAFT]**:
@@ -31,36 +32,38 @@ Team card (desktop: 2×2 photo grid · mobile: avatar row) **[DRAFT]**:
 - Note: One of these licensed brokers will personally take your call.
 - ⚠️ Only accurate while the page books into the `u11` round-robin (Ashton West, William Patterson, McKala Bracci, Jeff Gorsuch). Update if the meeting link changes.
 
-Background: Cincinnati skyline at night (public domain, CC0, Wikimedia Commons), dark overlay.
+Background: advisor helping a client at a laptop (matches "someone who works for you") — StockSnap "Business Meeting" SSKSJIBMMP, **CC0**, dark overlay. ⚠️ Prototype uses 960px version; download full-res from https://stocksnap.io/photo/business-meeting-SSKSJIBMMP before launch.
 
 ---
 
 ## Section 2 — Brand Message Video
 
 - Heading: **See what makes us different.** **[CLIENT]** ("different." in red)
-- Feature points **[DRAFT]**:
-  - Local Cincinnati team
-  - Independent: we compare many carriers
-  - Private & Marketplace plans
-  - Free, no-obligation advice
+- Layout: heading → video → CTA (nothing else, per client brief)
 - Video: muted autoplay, captions on, sound on tap/click **[CLIENT]**
 - Sound button label: Tap for sound **[DRAFT]**
 - CTA below video: **Book Your Free Consult** **[CLIENT]**
+- Under CTA: Free · 15 minutes · No obligation **[CLIENT]**
 - Video file: **[PLACEHOLDER]** — prototype uses existing YouTube video `gaUNawXf3A8` ("As Seen On Ask the Expert"). Final: MP4 + captions file (.vtt) from client.
 
 ---
 
 ## Section 3 — Testimonials
 
-- Heading / trust line: **Real Cincinnati families. Real coverage that shows up.** **[CLIENT]**
-- Card layout: video poster → play button → quote → name in red · neighborhood
-- Quote per card: **[PLACEHOLDER]** short quote pulled from each client's video
-- Poster: **[PLACEHOLDER]** — prototype uses skyline crops; final = real video thumbnails (no stock faces: would read as fake testimonials)
-- 2–3 real client testimonial videos **[CLIENT]**
-  - Video 1: **[PLACEHOLDER]** — client name, neighborhood, video
-  - Video 2: **[PLACEHOLDER]**
-  - Video 3: **[PLACEHOLDER]**
+- Heading: **Real Cincinnati families. Real coverage that shows up.** **[CLIENT]** ("Real coverage that shows up." in red)
+- Subheading: ★★★★★ Rated 4.9 out of 5 from 308 Google reviews — snapshot from covercincy.com Google reviews widget on 2026-09-29; update before launch.
+- Cards: real Google reviews from covercincy.com homepage (verbatim; names shortened to first name + last initial):
+
+  1. **Taylor K.** · Helped by Ashton
+     "Ashton was super knowledgeable and great! He made getting coverage for our family easier than I thought it would be, thank you!"
+  2. **Megan R.** · Helped by McKala (excerpt, "…" marks trimmed text)
+     "I'm so grateful for the help and guidance I received from McKala… She helped me find the best plan for my daughter and me, and made what could have been a stressful process feel simple and manageable."
+  3. **Brian T.** · Helped by William
+     "William Patterson was fantastic, he provided several coverage options and solutions to help my family. I highly recommend calling for any health benefit needs."
+
 - CTA: **Book Your Free Consult** **[CLIENT]**
+- Under CTA: Free · 15 minutes · No obligation **[CLIENT]**
+- Client testimonial **videos** (from brief): **[PLACEHOLDER]** — can be added above the review cards when ready.
 
 > Never write fake testimonials or names. Only real client content.
 
@@ -116,7 +119,8 @@ Navy `#253A5E` from the live site is intentionally NOT used (brief: gray, black,
 ## Assets
 
 Local (in `landing-page/images/`, optimized):
-- `cincinnati-skyline-night.jpg` / `-sm.jpg` — Wikimedia Commons "Downtown Cincinnati skyline at night", **CC0 public domain** (no attribution required)
+- `hero-advisor-client.jpg` — StockSnap SSKSJIBMMP, **CC0** (no attribution required)
+- `cincinnati-skyline-night.jpg` / `-sm.jpg` — Wikimedia Commons, **CC0** (no longer used; kept for option)
 - `agent-ashton-west.jpg`, `agent-william-patterson.jpg`, `agent-mckala-bracci.jpg`, `agent-jeff-gorsuch.jpg` — client's own headshots from covercincy.com/insuranceagents
 
 Still hotlinked from client's Webflow CDN (re-upload to HubSpot File Manager at build time):
