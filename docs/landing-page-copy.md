@@ -32,7 +32,7 @@ Team card (desktop: 2×2 photo grid · mobile: avatar row) **[DRAFT]**:
 - Note: One of these licensed brokers will personally take your call.
 - ⚠️ Only accurate while the page books into the `u11` round-robin (Ashton West, William Patterson, McKala Bracci, Jeff Gorsuch). Update if the meeting link changes.
 
-Background: advisor helping a client at a laptop (matches "someone who works for you") — StockSnap "Business Meeting" SSKSJIBMMP, **CC0**, dark overlay. ⚠️ Prototype uses 960px version; download full-res from https://stocksnap.io/photo/business-meeting-SSKSJIBMMP before launch.
+Background: dark gradient with soft red glow — same style as the footer (no photo).
 
 ---
 
@@ -119,7 +119,6 @@ Navy `#253A5E` from the live site is intentionally NOT used (brief: gray, black,
 ## Assets
 
 Local (in `landing-page/images/`, optimized):
-- `hero-advisor-client.jpg` — StockSnap SSKSJIBMMP, **CC0** (no attribution required)
 - `cincinnati-skyline-night.jpg` / `-sm.jpg` — Wikimedia Commons, **CC0** (no longer used; kept for option)
 - `agent-ashton-west.jpg`, `agent-william-patterson.jpg`, `agent-mckala-bracci.jpg`, `agent-jeff-gorsuch.jpg` — client's own headshots from covercincy.com/insuranceagents
 

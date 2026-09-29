@@ -139,30 +139,13 @@ a { color: inherit; }
   overflow: hidden;
   isolation: isolate;
   color: var(--cc-white);
-  background: var(--cc-black);
   padding: 36px 0 84px;
-}
-.cc-hero__bg,
-.cc-hero__bg img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 30%;
-  z-index: -2;
-}
-.cc-hero__bg img { filter: grayscale(0.35) contrast(1.05); }
-.cc-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+  /* Same dark + red-glow gradient as the footer, so top and bottom match */
   background:
-    linear-gradient(180deg, rgba(15, 15, 16, 0.78) 0%, rgba(15, 15, 16, 0.7) 45%, rgba(15, 15, 16, 0.92) 100%),
-    radial-gradient(90% 60% at 100% 0%, rgba(167, 42, 44, 0.35), rgba(167, 42, 44, 0) 70%);
+    radial-gradient(60% 50% at 85% 20%, rgba(167, 42, 44, 0.28), rgba(167, 42, 44, 0) 70%),
+    radial-gradient(50% 40% at 0% 100%, rgba(167, 42, 44, 0.12), rgba(167, 42, 44, 0) 70%),
+    linear-gradient(180deg, var(--cc-black-2), var(--cc-black));
 }
-
 .cc-hero__content { text-align: center; }
 .cc-hero__title {
   font-family: var(--cc-font-head);
@@ -683,13 +666,6 @@ a { color: inherit; }
    ========================================================================== */
 @media (min-width: 1024px) {
   .cc-hero { padding: 88px 0 150px; }
-  /* Extra darkening behind the headline column for legibility */
-  .cc-hero::before {
-    background:
-      linear-gradient(90deg, rgba(15, 15, 16, 0.82) 0%, rgba(15, 15, 16, 0.55) 55%, rgba(15, 15, 16, 0.35) 100%),
-      linear-gradient(180deg, rgba(15, 15, 16, 0.35) 0%, rgba(15, 15, 16, 0.2) 50%, rgba(15, 15, 16, 0.85) 100%),
-      radial-gradient(90% 60% at 100% 0%, rgba(167, 42, 44, 0.35), rgba(167, 42, 44, 0) 70%);
-  }
   .cc-hero__content { text-align: left; }
   .cc-hero__actions { align-items: flex-start; }
   .cc-badges { justify-content: flex-start; }
