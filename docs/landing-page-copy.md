@@ -73,13 +73,18 @@ Background: Cincinnati skyline at night (public domain, CC0, Wikimedia Commons),
 - Calendar: HubSpot Meetings embed, full width, minimal fields **[CLIENT]**
   - Prototype link: `https://meetings.hubspot.com/aruhlman/u11?embed=true`
     (the same round-robin link the live /book page uses for Ohio + under-65 health: Ashton, William, Jeff, McKala)
-- Phone fallback banner (dark, with McKala's photo) **[CLIENT]** phone / **[DRAFT]** wording:
+- Booking panel (gray frame around calendar) **[DRAFT]**:
+  - Steps: 1 Pick a day · 2 Choose a time · 3 Add your details
+  - Broker faces + "You'll meet with a **licensed local broker**"
+  - Below calendar: Can't find a time that works? Call (513) 800-2255 **[CLIENT]** phone fallback
+- Calendar look (navy panel, fonts, 45-min duration, Zoom) is set inside HubSpot, not by our page code.
+
+## Footer (one dark section: phone CTA → trust → fade line → copyright)
+- Phone CTA (McKala's photo) **[CLIENT]** phone / **[DRAFT]** wording:
   - Title: Prefer to talk to a real person now?
   - Text: Call our local office and talk with our team.
   - Phone: (513) 800-2255
-- Trust strip: official BBB A+ seal + USA Benefits Group "Established 1988" badge
-
-## Footer
+- Trust: official BBB A+ seal + USA Benefits Group "Established 1988" badge
 - © {year} Cover Cincy · A USA Benefits Group agency **[DRAFT]**
 - Privacy Policy link **[DRAFT — see open items]**
 
@@ -127,4 +132,5 @@ Still hotlinked from client's Webflow CDN (re-upload to HubSpot File Manager at 
 3. Confirm landing page should book into the `u11` round-robin link — or create a **new, separate** meeting link with minimal fields (don't edit `u11`; the live /book page uses it).
 4. OK to include a Privacy Policy link in footer? (Recommended for paid social ads.)
 5. HubSpot plan level (user providing).
-6. Confirm OK to feature Ashton, William, McKala and Jeff's photos on an ad landing page.
+6. ⚠️ **Duration mismatch:** `u11` link is a **45-min Zoom** meeting; brief says **15 minutes**. Need a new, separate 15-min meeting link for this page (don't edit `u11`) — or change the copy.
+7. Confirm OK to feature Ashton, William, McKala and Jeff's photos on an ad landing page.

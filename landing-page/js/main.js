@@ -188,9 +188,17 @@
       update();
     }).observe(heroCta);
 
-    new IntersectionObserver(function (entries) {
-      bookVisible = entries[0].isIntersecting;
+    // Hide while the booking block or footer (phone CTA) is on screen
+    var visible = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target);
+      });
+      bookVisible = visible.size > 0;
       update();
-    }, { rootMargin: '0px 0px -30% 0px' }).observe(book);
+    }, { rootMargin: '0px 0px -30% 0px' });
+    io.observe(book);
+    var footer = document.querySelector('.cc-footer');
+    if (footer) io.observe(footer);
   }
 })();

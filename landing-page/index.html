@@ -197,41 +197,71 @@
           <p class="cc-reassure__line">We work for you, not the insurance carriers.</p>
         </div>
 
-        <div class="cc-calendar">
-          <!-- HubSpot Meetings embed. Script is lazy-loaded by main.js -->
-          <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/aruhlman/u11?embed=true"></div>
-          <div class="cc-calendar__loading" aria-live="polite">
-            <span class="cc-spinner" aria-hidden="true"></span>
-            Loading available times…
+        <div class="cc-booker">
+          <div class="cc-booker__bar">
+            <ol class="cc-booker__steps" aria-label="How booking works">
+              <li><span>1</span>Pick a day</li>
+              <li><span>2</span>Choose a time</li>
+              <li><span>3</span>Add your details</li>
+            </ol>
+            <div class="cc-booker__who">
+              <div class="cc-booker__faces" aria-hidden="true">
+                <img src="images/agent-ashton-west.jpg" alt="" width="420" height="420" loading="lazy">
+                <img src="images/agent-william-patterson.jpg" alt="" width="420" height="420" loading="lazy">
+                <img src="images/agent-mckala-bracci.jpg" alt="" width="420" height="420" loading="lazy">
+                <img src="images/agent-jeff-gorsuch.jpg" alt="" width="420" height="420" loading="lazy">
+              </div>
+              <p>You'll meet with a <strong>licensed local broker</strong></p>
+            </div>
           </div>
-        </div>
 
-        <!-- Phone fallback banner -->
-        <div class="cc-callout">
-          <img class="cc-callout__photo" src="images/agent-mckala-bracci.jpg" alt="McKala Bracci, licensed broker" width="420" height="420" loading="lazy">
-          <div class="cc-callout__body">
-            <p class="cc-callout__title">Prefer to talk to a real person now?</p>
-            <p class="cc-callout__text">Call our local office and talk with our team.</p>
+          <div class="cc-calendar">
+            <!-- HubSpot Meetings embed. Script is lazy-loaded by main.js -->
+            <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/aruhlman/u11?embed=true"></div>
+            <div class="cc-calendar__loading" aria-live="polite">
+              <span class="cc-spinner" aria-hidden="true"></span>
+              Loading available times…
+            </div>
           </div>
-          <a class="cc-callout__phone" href="tel:+15138002255" data-cta="book-phone">
-            <span class="cc-callout__phone-icon"><svg aria-hidden="true" width="22" height="22"><use href="#i-phone"/></svg></span>
-            (513) 800-2255
-          </a>
-        </div>
 
-        <div class="cc-trust">
-          <img src="https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32988ebc7e09d5bc9d1e3_logo.bbb.png" alt="BBB Accredited Business, A+ Rating" width="150" height="58" loading="lazy">
-          <img src="https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32989155a2f3aa52f5092_static-logos-usabg-badge-1988.png" alt="USA Benefits Group, established 1988" width="72" height="72" loading="lazy">
+          <p class="cc-booker__foot">
+            Can't find a time that works?
+            <a href="tel:+15138002255" data-cta="book-phone">Call (513) 800-2255</a>
+          </p>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ===== Footer: phone CTA + trust + copyright (one section) ===== -->
   <footer class="cc-footer">
-    <div class="cc-container cc-footer__inner">
-      <p>© <span data-year>2026</span> Cover Cincy · A USA Benefits Group agency</p>
-      <a href="https://www.covercincy.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    <svg class="cc-wave cc-wave--footer" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v30c-240 36-480 40-720 10S240 0 0 34z"/></svg>
+
+    <div class="cc-container">
+      <div class="cc-footer__cta">
+        <img class="cc-footer__photo" src="images/agent-mckala-bracci.jpg" alt="McKala Bracci, licensed broker" width="420" height="420" loading="lazy">
+        <div class="cc-footer__text">
+          <p class="cc-footer__title">Prefer to talk to a real person now?</p>
+          <p class="cc-footer__sub">Call our local office and talk with our team.</p>
+        </div>
+        <a class="cc-footer__phone" href="tel:+15138002255" data-cta="footer-phone">
+          <span class="cc-footer__phone-icon"><svg aria-hidden="true" width="22" height="22"><use href="#i-phone"/></svg></span>
+          (513) 800-2255
+        </a>
+      </div>
+
+      <div class="cc-footer__trust">
+        <span class="cc-footer__bbb"><img src="https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32988ebc7e09d5bc9d1e3_logo.bbb.png" alt="BBB Accredited Business, A+ Rating" width="130" height="50" loading="lazy"></span>
+        <img src="https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32989155a2f3aa52f5092_static-logos-usabg-badge-1988.png" alt="USA Benefits Group, established 1988" width="64" height="64" loading="lazy">
+      </div>
+
+      <hr class="cc-fade">
+
+      <div class="cc-footer__bottom">
+        <p>© <span data-year>2026</span> Cover Cincy · A USA Benefits Group agency</p>
+        <a href="https://www.covercincy.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+      </div>
     </div>
   </footer>
 
