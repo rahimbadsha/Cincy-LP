@@ -298,6 +298,39 @@ a { color: inherit; }
 .cc-rating strong { color: var(--cc-ink); font-weight: 600; }
 
 .cc-reviews { display: grid; gap: 16px; margin-top: 32px; }
+
+/* Phones: swipeable row with snap + peek of the next card */
+@media (max-width: 767px) {
+  .cc-reviews {
+    grid-auto-flow: column;
+    grid-auto-columns: 86%;
+    gap: 14px;
+    margin: 28px calc(var(--cc-gutter) * -1) 0;
+    padding: 4px var(--cc-gutter) 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--cc-gutter);
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cc-reviews::-webkit-scrollbar { display: none; }
+  .cc-review { scroll-snap-align: start; }
+  .cc-review:hover { transform: none; }
+}
+.cc-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.cc-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cc-gray-400);
+  opacity: .5;
+  cursor: pointer;
+  transition: width .25s ease, opacity .25s ease, background-color .25s ease;
+}
+.cc-dots button[aria-current="true"] { width: 22px; opacity: 1; background: var(--cc-red); }
 .cc-review {
   position: relative;
   display: flex;
@@ -624,6 +657,7 @@ a { color: inherit; }
   .cc-wave--top, .cc-wave--bottom { height: 70px; }
   .cc-testimonials { padding: calc(var(--cc-section-y) + 30px) 0 calc(var(--cc-section-y) + 40px); }
   .cc-reviews { grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
+  .cc-dots { display: none; }
   .cc-review { padding: 28px 26px 22px; }
 
   .cc-calendar { margin: 36px 0 0; }

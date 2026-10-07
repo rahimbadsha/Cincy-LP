@@ -66,7 +66,7 @@ Background: dark gradient with soft red glow — same style as the footer (no ph
      "William Patterson was great to talk to and very knowledgeable. He explained things to make them easy for me to understand and signed me up for health coverage same day."
   6. **Donna S.** · Helped by McKala (verbatim, including original spelling/grammar)
      "Mckala was very thorough with us. She did a excellent job"
-  - Layout: 2 rows × 3 cards on desktop; stacked on mobile. No review naming Jeff was found in the visible widget reviews.
+  - Layout: 2 rows × 3 cards on desktop; swipeable row with dots on phones (<768px). No review naming Jeff was found in the visible widget reviews.
 
 - CTA: **Book Your Free Consult** **[CLIENT]**
 - Under CTA: Free · 15 minutes · No obligation **[CLIENT]**

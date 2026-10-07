@@ -165,6 +165,33 @@
     }, { once: true });
   });
 
+  /* ---------- Reviews carousel dots (phones) ---------- */
+  var reviewList = document.querySelector('.cc-reviews');
+  var dotsWrap = document.querySelector('.cc-dots');
+  if (reviewList && dotsWrap && hasIO) {
+    var reviewCards = Array.prototype.slice.call(reviewList.children);
+    var dots = reviewCards.map(function (card, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Show review ' + (i + 1) + ' of ' + reviewCards.length);
+      b.addEventListener('click', function () {
+        reviewList.scrollTo({ left: card.offsetLeft - reviewList.offsetLeft - parseFloat(getComputedStyle(reviewList).paddingLeft), behavior: 'smooth' });
+      });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+    var setActive = function (i) {
+      dots.forEach(function (d, k) { d.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+    };
+    setActive(0);
+    var cardObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(reviewCards.indexOf(e.target));
+      });
+    }, { root: reviewList, threshold: 0.6 });
+    reviewCards.forEach(function (card) { cardObserver.observe(card); });
+  }
+
   /* ---------- Mobile sticky CTA ---------- */
   var sticky = document.querySelector('.cc-sticky');
   var heroCta = document.getElementById('hero-cta');
