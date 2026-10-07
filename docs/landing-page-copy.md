@@ -60,6 +60,13 @@ Background: dark gradient with soft red glow — same style as the footer (no ph
      "I'm so grateful for the help and guidance I received from McKala… She helped me find the best plan for my daughter and me, and made what could have been a stressful process feel simple and manageable."
   3. **Brian T.** · Helped by William
      "William Patterson was fantastic, he provided several coverage options and solutions to help my family. I highly recommend calling for any health benefit needs."
+  4. **Daryl Q.** · Helped by Ashton
+     "Ashton explained the plans to fit our needs very well and was honest and upfront."
+  5. **Will F.** · Helped by William
+     "William Patterson was great to talk to and very knowledgeable. He explained things to make them easy for me to understand and signed me up for health coverage same day."
+  6. **Donna S.** · Helped by McKala (verbatim, including original spelling/grammar)
+     "Mckala was very thorough with us. She did a excellent job"
+  - Layout: 2 rows × 3 cards on desktop; stacked on mobile. No review naming Jeff was found in the visible widget reviews.
 
 - CTA: **Book Your Free Consult** **[CLIENT]**
 - Under CTA: Free · 15 minutes · No obligation **[CLIENT]**
