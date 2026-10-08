@@ -145,3 +145,4 @@ Still hotlinked from client's Webflow CDN (re-upload to HubSpot File Manager at 
 6. ⚠️ **Duration mismatch:** `u11` link is a **45-min Zoom** meeting; brief says **15 minutes**. Need a new, separate 15-min meeting link for this page (don't edit `u11`) — or change the copy.
 7. Confirm OK to feature Ashton, William, McKala and Jeff's photos on an ad landing page.
 8. ⚠️ **Before launch:** remove the `noindex` meta tag from `landing-page/index.html` (added only for the GitHub Pages preview).
+9. **HubSpot review page is live:** https://8146581.hs-sites.com/free-consult (free HubSpot domain, calendar is live). Before the real launch: connect the client domain, switch to the 15-min meeting link, and remove the `noindex` line from the page's *Settings → Advanced → Head HTML*.
