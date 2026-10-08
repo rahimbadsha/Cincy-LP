@@ -8,6 +8,10 @@ Built as a mobile-first HTML/CSS/JS prototype; it will be converted into a HubSp
 
 ```
 landing-page/         Page prototype (index.html, css/, js/, images/)
+hubspot/cover-cincy-lp/
+  templates/          HubSpot landing page template (HubL)
+  modules/            One editable module per section (header, hero, video, reviews, booking, footer, sticky)
+  css/, js/           Shared styles and behavior (same as the prototype)
 docs/                 Page copy, brand tokens, open items (.md source + browser-viewable .html)
 scripts/
   build-docs.py       Rebuild docs/*.html from docs/*.md
@@ -40,3 +44,8 @@ git tag -n
 ```
 
 Open any version: `git checkout v4` (return with `git checkout main`).
+
+## HubSpot build
+
+`hubspot/cover-cincy-lp/` mirrors the `cover-cincy-lp` folder in the HubSpot Design Manager.
+Create a landing page from the **Cover Cincy - Booking Landing Page** template; every section is editable in the page editor.

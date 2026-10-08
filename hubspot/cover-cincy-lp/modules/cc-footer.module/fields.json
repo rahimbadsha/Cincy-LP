@@ -1,0 +1,53 @@
+[
+  {
+    "name": "photo",
+    "label": "Photo",
+    "type": "image",
+    "resizable": false,
+    "responsive": true,
+    "default": {
+      "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png",
+      "alt": "McKala Bracci, licensed broker"
+    }
+  },
+  { "name": "title", "label": "Title", "type": "text", "default": "Prefer to talk to a real person now?" },
+  { "name": "subtitle", "label": "Subtitle", "type": "text", "default": "Call our local office and talk with our team." },
+  { "name": "phone_display", "label": "Phone (as shown)", "type": "text", "default": "(513) 800-2255" },
+  {
+    "name": "phone_link",
+    "label": "Phone (for dialing)",
+    "help_text": "Digits only with country code, e.g. +15138002255",
+    "type": "text",
+    "default": "+15138002255"
+  },
+  {
+    "name": "bbb_logo",
+    "label": "BBB badge",
+    "type": "image",
+    "resizable": false,
+    "responsive": true,
+    "default": {
+      "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32988ebc7e09d5bc9d1e3_logo.bbb.png",
+      "alt": "BBB Accredited Business, A+ Rating"
+    }
+  },
+  {
+    "name": "since_badge",
+    "label": "Since 1988 badge",
+    "type": "image",
+    "resizable": false,
+    "responsive": true,
+    "default": {
+      "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6aa32989155a2f3aa52f5092_static-logos-usabg-badge-1988.png",
+      "alt": "USA Benefits Group, established 1988"
+    }
+  },
+  {
+    "name": "copyright",
+    "label": "Copyright text (year is added automatically)",
+    "type": "text",
+    "default": "Cover Cincy · A USA Benefits Group agency"
+  },
+  { "name": "privacy_label", "label": "Privacy link text", "type": "text", "default": "Privacy Policy" },
+  { "name": "privacy_url", "label": "Privacy link URL", "type": "text", "default": "https://www.covercincy.com/privacy-policy" }
+]

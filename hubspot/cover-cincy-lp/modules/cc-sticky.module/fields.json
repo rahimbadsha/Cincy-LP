@@ -1,0 +1,12 @@
+[
+  { "name": "cta_text", "label": "Button text", "type": "text", "default": "Book Free Consult" },
+  { "name": "cta_link", "label": "Button link", "type": "text", "default": "#book" },
+  { "name": "phone_display", "label": "Phone (as shown, for screen readers)", "type": "text", "default": "(513) 800-2255" },
+  {
+    "name": "phone_link",
+    "label": "Phone (for dialing)",
+    "help_text": "Digits only with country code, e.g. +15138002255",
+    "type": "text",
+    "default": "+15138002255"
+  }
+]

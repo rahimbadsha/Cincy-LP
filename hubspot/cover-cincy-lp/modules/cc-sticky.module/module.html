@@ -1,0 +1,7 @@
+{# Phones only: shows after the hero button scrolls away, hides at the calendar and footer (see cover-cincy-lp.js) #}
+<div class="cc-sticky" aria-hidden="true">
+  <a class="cc-btn cc-btn--primary cc-sticky__btn" href="{{ module.cta_link|escape_attr }}" data-cta="sticky" tabindex="-1">{{ module.cta_text }}</a>
+  <a class="cc-sticky__call" href="tel:{{ module.phone_link|escape_attr }}" data-cta="sticky-phone" aria-label="Call {{ module.phone_display|escape_attr }}" tabindex="-1">
+    <svg aria-hidden="true" width="22" height="22"><use href="#i-phone"/></svg>
+  </a>
+</div>

@@ -1,0 +1,51 @@
+{% set meeting_src = module.meeting_url ~ ("&" if "?" in module.meeting_url else "?") ~ "embed=true" %}
+
+<section class="cc-section cc-book" id="book" aria-labelledby="book-title">
+  <div class="cc-container">
+    <div class="cc-book__head">
+      <h2 id="book-title" class="cc-h2">{{ module.heading }} <span class="cc-accent">{{ module.heading_accent }}</span></h2>
+      {% if module.reassure %}
+        <ul class="cc-reassure">
+          {% for chip in module.reassure %}<li>{{ chip.text }}</li>{% endfor %}
+        </ul>
+      {% endif %}
+      {% if module.reassure_line %}<p class="cc-reassure__line">{{ module.reassure_line }}</p>{% endif %}
+    </div>
+
+    <div class="cc-booker">
+      <div class="cc-booker__bar">
+        {% if module.steps %}
+          <ol class="cc-booker__steps" aria-label="How booking works">
+            {% for step in module.steps %}<li><span>{{ loop.index }}</span>{{ step.text }}</li>{% endfor %}
+          </ol>
+        {% endif %}
+        <div class="cc-booker__who">
+          {% if module.faces %}
+            <div class="cc-booker__faces" aria-hidden="true">
+              {% for face in module.faces %}
+                {% if face.photo.src %}<img src="{{ face.photo.src }}" alt="" width="420" height="420" loading="lazy">{% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <p>{{ module.who_text }} <strong>{{ module.who_bold }}</strong></p>
+        </div>
+      </div>
+
+      <div class="cc-calendar" data-fallback-phone="{{ module.phone_display|escape_attr }}">
+        {# HubSpot Meetings embed. Script is lazy-loaded by cover-cincy-lp.js #}
+        {% if module.meeting_url %}
+          <div class="meetings-iframe-container" data-src="{{ meeting_src|escape_attr }}"></div>
+        {% endif %}
+        <div class="cc-calendar__loading" aria-live="polite">
+          <span class="cc-spinner" aria-hidden="true"></span>
+          {{ module.loading_text }}
+        </div>
+      </div>
+
+      <p class="cc-booker__foot">
+        {{ module.fallback_text }}
+        <a href="tel:{{ module.phone_link|escape_attr }}" data-cta="book-phone">Call {{ module.phone_display }}</a>
+      </p>
+    </div>
+  </div>
+</section>

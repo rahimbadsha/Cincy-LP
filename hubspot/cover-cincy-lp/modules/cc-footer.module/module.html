@@ -1,0 +1,37 @@
+<footer class="cc-footer">
+  <svg class="cc-wave cc-wave--footer" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v30c-240 36-480 40-720 10S240 0 0 34z"/></svg>
+
+  <div class="cc-container">
+    <div class="cc-footer__cta">
+      {% if module.photo.src %}
+        <img class="cc-footer__photo" src="{{ module.photo.src }}" alt="{{ module.photo.alt|escape_attr }}" width="420" height="420" loading="lazy">
+      {% endif %}
+      <div class="cc-footer__text">
+        <p class="cc-footer__title">{{ module.title }}</p>
+        {% if module.subtitle %}<p class="cc-footer__sub">{{ module.subtitle }}</p>{% endif %}
+      </div>
+      <a class="cc-footer__phone" href="tel:{{ module.phone_link|escape_attr }}" data-cta="footer-phone">
+        <span class="cc-footer__phone-icon"><svg aria-hidden="true" width="22" height="22"><use href="#i-phone"/></svg></span>
+        {{ module.phone_display }}
+      </a>
+    </div>
+
+    {% if module.bbb_logo.src or module.since_badge.src %}
+      <div class="cc-footer__trust">
+        {% if module.bbb_logo.src %}
+          <span class="cc-footer__bbb"><img src="{{ module.bbb_logo.src }}" alt="{{ module.bbb_logo.alt|escape_attr }}" width="130" height="50" loading="lazy"></span>
+        {% endif %}
+        {% if module.since_badge.src %}
+          <img src="{{ module.since_badge.src }}" alt="{{ module.since_badge.alt|escape_attr }}" width="64" height="64" loading="lazy">
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <hr class="cc-fade">
+
+    <div class="cc-footer__bottom">
+      <p>© {{ local_dt|datetimeformat("%Y") }} {{ module.copyright }}</p>
+      {% if module.privacy_url %}<a href="{{ module.privacy_url|escape_attr }}" target="_blank" rel="noopener">{{ module.privacy_label }}</a>{% endif %}
+    </div>
+  </div>
+</footer>

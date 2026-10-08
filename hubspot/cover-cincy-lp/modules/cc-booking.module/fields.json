@@ -1,0 +1,67 @@
+[
+  { "name": "heading", "label": "Heading (dark part)", "type": "text", "default": "Pick a time for your" },
+  { "name": "heading_accent", "label": "Heading (red part)", "type": "text", "default": "free consult." },
+  {
+    "name": "reassure",
+    "label": "Reassurance chips",
+    "type": "group",
+    "occurrence": { "min": 0, "max": 5, "default": 3 },
+    "children": [{ "name": "text", "label": "Text", "type": "text", "default": "" }],
+    "default": [{ "text": "Free" }, { "text": "No obligation" }, { "text": "15 minutes" }]
+  },
+  {
+    "name": "reassure_line",
+    "label": "Reassurance line",
+    "type": "text",
+    "default": "We work for you, not the insurance carriers."
+  },
+  {
+    "name": "meeting_url",
+    "label": "HubSpot meeting link",
+    "help_text": "The meeting scheduling link, e.g. https://meetings.hubspot.com/name/link. Use a link made for this page (15 minutes). Do not paste the embed code.",
+    "type": "text",
+    "default": "https://meetings.hubspot.com/aruhlman/u11"
+  },
+  {
+    "name": "steps",
+    "label": "Booking steps",
+    "type": "group",
+    "occurrence": { "min": 0, "max": 4, "default": 3 },
+    "children": [{ "name": "text", "label": "Step", "type": "text", "default": "" }],
+    "default": [{ "text": "Pick a day" }, { "text": "Choose a time" }, { "text": "Add your details" }]
+  },
+  {
+    "name": "faces",
+    "label": "Broker faces",
+    "type": "group",
+    "occurrence": { "min": 0, "max": 5, "default": 4 },
+    "children": [
+      {
+        "name": "photo",
+        "label": "Photo",
+        "type": "image",
+        "resizable": false,
+        "responsive": true,
+        "default": { "src": "", "alt": "" }
+      }
+    ],
+    "default": [
+      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "" } },
+      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "" } },
+      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "" } },
+      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970481a3b4271aa5785b47_Screenshot%202026-09-01%20122753.png", "alt": "" } }
+    ]
+  },
+  { "name": "who_text", "label": "Broker line", "type": "text", "default": "You'll meet with a" },
+  { "name": "who_bold", "label": "Broker line (bold part)", "type": "text", "default": "licensed local broker" },
+  { "name": "loading_text", "label": "Loading text", "type": "text", "default": "Loading available times…" },
+  { "name": "fallback_text", "label": "Phone fallback text", "type": "text", "default": "Can't find a time that works?" },
+  { "name": "phone_display", "label": "Phone (as shown)", "type": "text", "default": "(513) 800-2255" },
+  {
+    "name": "phone_link",
+    "label": "Phone (for dialing)",
+    "help_text": "Digits only with country code, e.g. +15138002255",
+    "type": "text",
+    "default": "+15138002255"
+  }
+]

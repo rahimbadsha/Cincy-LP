@@ -1,0 +1,17 @@
+<header class="cc-header">
+  <div class="cc-container cc-header__inner">
+    <div class="cc-brand">
+      {% if module.logo.src %}
+        <img class="cc-brand__logo" src="{{ module.logo.src }}" alt="{{ module.logo.alt|escape_attr }}" width="40" height="40">
+      {% endif %}
+      <span class="cc-brand__name">{{ module.brand_first }}<span>{{ module.brand_second }}</span></span>
+    </div>
+    <div class="cc-header__call">
+      {% if module.call_label %}<span class="cc-header__label">{{ module.call_label }}</span>{% endif %}
+      <a class="cc-btn cc-btn--primary cc-btn--sm" href="tel:{{ module.phone_link|escape_attr }}" data-cta="header-phone">
+        <svg aria-hidden="true" width="16" height="16"><use href="#i-phone"/></svg>
+        {{ module.phone_display }}
+      </a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,24 @@
+<section class="cc-section cc-video" id="video" aria-labelledby="video-title">
+  <div class="cc-container cc-container--narrow">
+    <h2 id="video-title" class="cc-h2 cc-center">{{ module.heading }} <span class="cc-accent">{{ module.heading_accent }}</span></h2>
+
+    {% if module.source == "mp4" and module.mp4_file %}
+      <div class="cc-player" data-type="mp4" data-src="{{ module.mp4_file|escape_attr }}"
+        {% if module.captions_file %}data-captions="{{ module.captions_file|escape_attr }}"{% endif %}
+        {% if module.poster.src %}data-poster="{{ module.poster.src|escape_attr }}"{% endif %}>
+    {% else %}
+      <div class="cc-player" data-type="youtube" data-youtube-id="{{ module.youtube_id|escape_attr }}">
+    {% endif %}
+        <div class="cc-player__frame"></div>
+        <button class="cc-player__sound" type="button" hidden>
+          <svg aria-hidden="true" width="20" height="20"><use href="#i-sound"/></svg>
+          {{ module.sound_label }}
+        </button>
+      </div>
+
+    <div class="cc-cta-block">
+      <a class="cc-btn cc-btn--primary cc-btn--lg" href="{{ module.cta_link|escape_attr }}" data-cta="video">{{ module.cta_text }}</a>
+      {% if module.microcopy %}<p class="cc-microcopy">{{ module.microcopy }}</p>{% endif %}
+    </div>
+  </div>
+</section>

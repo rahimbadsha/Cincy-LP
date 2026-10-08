@@ -1,0 +1,76 @@
+[
+  { "name": "heading", "label": "Heading (dark part)", "type": "text", "default": "Real Cincinnati families." },
+  { "name": "heading_accent", "label": "Heading (red part)", "type": "text", "default": "Real coverage that shows up." },
+  { "name": "show_rating", "label": "Show rating line", "type": "boolean", "default": true },
+  {
+    "name": "rating_value",
+    "label": "Rating",
+    "help_text": "Check the current Google rating before publishing.",
+    "type": "text",
+    "default": "4.9 out of 5"
+  },
+  { "name": "rating_count", "label": "Number of reviews", "type": "text", "default": "308" },
+  { "name": "rating_source", "label": "Review source", "type": "text", "default": "Google reviews" },
+  { "name": "source_label", "label": "Card label", "type": "text", "default": "Google review" },
+  {
+    "name": "reviews",
+    "label": "Reviews",
+    "help_text": "Real reviews only, word for word. Shown 3 per row on desktop, swipeable on phones.",
+    "type": "group",
+    "occurrence": { "min": 1, "max": 12, "default": 6 },
+    "children": [
+      { "name": "quote", "label": "Review text", "type": "text", "default": "" },
+      { "name": "name", "label": "Reviewer (first name + last initial)", "type": "text", "default": "" },
+      { "name": "broker_name", "label": "Helped by (broker first name)", "type": "text", "default": "" },
+      {
+        "name": "broker_photo",
+        "label": "Broker photo",
+        "type": "image",
+        "resizable": false,
+        "responsive": true,
+        "default": { "src": "", "alt": "" }
+      }
+    ],
+    "default": [
+      {
+        "quote": "Ashton was super knowledgeable and great! He made getting coverage for our family easier than I thought it would be, thank you!",
+        "name": "Taylor K.",
+        "broker_name": "Ashton",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "" }
+      },
+      {
+        "quote": "I’m so grateful for the help and guidance I received from McKala… She helped me find the best plan for my daughter and me, and made what could have been a stressful process feel simple and manageable.",
+        "name": "Megan R.",
+        "broker_name": "McKala",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "" }
+      },
+      {
+        "quote": "William Patterson was fantastic, he provided several coverage options and solutions to help my family. I highly recommend calling for any health benefit needs.",
+        "name": "Brian T.",
+        "broker_name": "William",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "" }
+      },
+      {
+        "quote": "Ashton explained the plans to fit our needs very well and was honest and upfront.",
+        "name": "Daryl Q.",
+        "broker_name": "Ashton",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "" }
+      },
+      {
+        "quote": "William Patterson was great to talk to and very knowledgeable. He explained things to make them easy for me to understand and signed me up for health coverage same day.",
+        "name": "Will F.",
+        "broker_name": "William",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "" }
+      },
+      {
+        "quote": "Mckala was very thorough with us. She did a excellent job",
+        "name": "Donna S.",
+        "broker_name": "McKala",
+        "broker_photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "" }
+      }
+    ]
+  },
+  { "name": "cta_text", "label": "Button text", "type": "text", "default": "Book Your Free Consult" },
+  { "name": "cta_link", "label": "Button link", "type": "text", "default": "#book" },
+  { "name": "microcopy", "label": "Text under button", "type": "text", "default": "Free · 15 minutes · No obligation" }
+]

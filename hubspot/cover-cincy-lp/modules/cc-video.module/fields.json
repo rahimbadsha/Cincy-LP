@@ -1,0 +1,34 @@
+[
+  { "name": "heading", "label": "Heading (dark part)", "type": "text", "default": "See what makes us" },
+  { "name": "heading_accent", "label": "Heading (red part)", "type": "text", "default": "different." },
+  {
+    "name": "source",
+    "label": "Video source",
+    "help_text": "YouTube for now. Switch to MP4 file once the client's brand video (and captions file) is uploaded.",
+    "type": "choice",
+    "display": "select",
+    "choices": [["youtube", "YouTube video"], ["mp4", "MP4 file"]],
+    "default": "youtube"
+  },
+  {
+    "name": "youtube_id",
+    "label": "YouTube video ID",
+    "help_text": "The part after watch?v= in the YouTube link.",
+    "type": "text",
+    "default": "gaUNawXf3A8"
+  },
+  { "name": "mp4_file", "label": "MP4 video file", "type": "file", "picker": "file" },
+  { "name": "captions_file", "label": "Captions file (.vtt)", "type": "file", "picker": "file" },
+  {
+    "name": "poster",
+    "label": "Poster image (MP4 only)",
+    "type": "image",
+    "resizable": false,
+    "responsive": true,
+    "default": { "src": "", "alt": "" }
+  },
+  { "name": "sound_label", "label": "Sound button text", "type": "text", "default": "Tap for sound" },
+  { "name": "cta_text", "label": "Button text", "type": "text", "default": "Book Your Free Consult" },
+  { "name": "cta_link", "label": "Button link", "type": "text", "default": "#book" },
+  { "name": "microcopy", "label": "Text under button", "type": "text", "default": "Free · 15 minutes · No obligation" }
+]

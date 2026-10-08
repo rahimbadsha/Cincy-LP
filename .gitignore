@@ -1,2 +1,6 @@
 .DS_Store
 exports/
+
+# HubSpot CLI credentials — never commit
+hubspot.config.yml
+*.hubspot.config.yml

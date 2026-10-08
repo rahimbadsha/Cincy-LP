@@ -1,0 +1,26 @@
+[
+  {
+    "name": "logo",
+    "label": "Logo",
+    "type": "image",
+    "resizable": false,
+    "responsive": true,
+    "default": {
+      "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/663cdd6e630974f7c335ea5f_CoverCincy%20(1).png",
+      "alt": "",
+      "width": 40,
+      "height": 40
+    }
+  },
+  { "name": "brand_first", "label": "Brand name (dark part)", "type": "text", "default": "Cover" },
+  { "name": "brand_second", "label": "Brand name (red part)", "type": "text", "default": "Cincy" },
+  { "name": "call_label", "label": "Call label (desktop only)", "type": "text", "default": "Call us today" },
+  { "name": "phone_display", "label": "Phone (as shown)", "type": "text", "default": "(513) 800-2255" },
+  {
+    "name": "phone_link",
+    "label": "Phone (for dialing)",
+    "help_text": "Digits only with country code, e.g. +15138002255",
+    "type": "text",
+    "default": "+15138002255"
+  }
+]

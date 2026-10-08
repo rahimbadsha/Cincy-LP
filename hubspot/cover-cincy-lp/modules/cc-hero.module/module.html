@@ -1,0 +1,51 @@
+<section class="cc-hero" aria-labelledby="hero-title">
+  <div class="cc-container cc-hero__grid">
+    <div class="cc-hero__content">
+      <h1 id="hero-title" class="cc-hero__title">
+        {{ module.headline }} <span class="cc-accent">{{ module.headline_accent }}</span>
+      </h1>
+      {% if module.subhead %}<p class="cc-hero__sub">{{ module.subhead }}</p>{% endif %}
+
+      <div class="cc-hero__actions" id="hero-cta">
+        <a class="cc-btn cc-btn--primary cc-btn--lg" href="{{ module.cta_link|escape_attr }}" data-cta="hero">
+          {{ module.cta_text }}
+          <svg aria-hidden="true" width="20" height="20"><use href="#i-arrow"/></svg>
+        </a>
+        {% if module.microcopy %}<p class="cc-microcopy">{{ module.microcopy }}</p>{% endif %}
+      </div>
+
+      {% if module.badges %}
+        <ul class="cc-badges" aria-label="Why trust us">
+          {% for badge in module.badges %}
+            <li class="cc-badge">
+              <svg aria-hidden="true" width="18" height="18"><use href="#i-{{ badge.icon }}"/></svg>
+              <span>{{ badge.text_before }}{% if badge.text_bold %}<strong>{{ badge.text_bold }}</strong>{% endif %}{{ badge.text_after }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+
+    {% if module.show_team %}
+      <aside class="cc-team" aria-labelledby="team-title">
+        <p class="cc-team__title" id="team-title">{{ module.team_title }}</p>
+        <ul class="cc-team__grid">
+          {% for person in module.team %}
+            {% if person.photo.src %}
+              <li>
+                <img src="{{ person.photo.src }}" alt="{{ person.photo.alt|escape_attr }}" width="420" height="420" loading="lazy">
+                {% if person.name %}<span>{{ person.name }}</span>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% if module.team_note %}<p class="cc-team__note">{{ module.team_note }}</p>{% endif %}
+      </aside>
+    {% endif %}
+  </div>
+
+  <svg class="cc-wave cc-wave--hero" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path class="cc-wave__fill" d="M0 54C240 96 480 10 720 36s480 50 720 4v50H0z"/>
+    <path class="cc-wave__line" d="M0 54C240 96 480 10 720 36s480 50 720 4"/>
+  </svg>
+</section>
