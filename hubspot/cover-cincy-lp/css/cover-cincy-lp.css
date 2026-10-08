@@ -710,7 +710,7 @@ a { color: inherit; }
     align-items: center;
   }
 
-  /* Team — desktop: photo card like the reference's hero person */
+  /* Team — desktop: 2x2 photo grid */
   .cc-team {
     display: block;
     margin: 0;
