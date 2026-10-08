@@ -651,7 +651,7 @@ a { color: inherit; }
   .cc-badge { font-size: 14.5px; padding: 9px 14px; }
   .cc-wave--hero { height: 90px; }
 
-  .cc-team { display: inline-grid; }
+  .cc-team { width: fit-content; margin-inline: auto; }
 
 
   .cc-wave--top, .cc-wave--bottom { height: 70px; }
@@ -713,6 +713,7 @@ a { color: inherit; }
   /* Team — desktop: 2x2 photo grid */
   .cc-team {
     display: block;
+    width: auto;
     margin: 0;
     padding: 24px;
     border-radius: 22px;
