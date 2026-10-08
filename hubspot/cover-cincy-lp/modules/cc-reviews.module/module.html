@@ -22,8 +22,8 @@
           </div>
           <blockquote class="cc-review__quote">“{{ review.quote }}”</blockquote>
           <div class="cc-review__foot">
-            <span class="cc-review__avatar" aria-hidden="true">{{ review.name|truncate(1, true, "")|upper }}</span>
-            <p class="cc-review__name">{{ review.name }}</p>
+            <span class="cc-review__avatar" aria-hidden="true">{{ review.reviewer|truncate(1, true, "")|upper }}</span>
+            <p class="cc-review__name">{{ review.reviewer }}</p>
             {% if review.broker_name %}
               <span class="cc-review__broker">
                 {% if review.broker_photo.src %}<img src="{{ review.broker_photo.src }}" alt="" width="420" height="420" loading="lazy">{% endif %}

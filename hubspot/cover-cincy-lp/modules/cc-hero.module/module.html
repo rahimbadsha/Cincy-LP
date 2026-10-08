@@ -34,7 +34,7 @@
             {% if person.photo.src %}
               <li>
                 <img src="{{ person.photo.src }}" alt="{{ person.photo.alt|escape_attr }}" width="420" height="420" loading="lazy">
-                {% if person.name %}<span>{{ person.name }}</span>{% endif %}
+                {% if person.first_name %}<span>{{ person.first_name }}</span>{% endif %}
               </li>
             {% endif %}
           {% endfor %}

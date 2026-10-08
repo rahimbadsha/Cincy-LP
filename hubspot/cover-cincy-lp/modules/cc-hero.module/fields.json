@@ -57,24 +57,24 @@
         "responsive": true,
         "default": { "src": "", "alt": "" }
       },
-      { "name": "name", "label": "First name (label on photo)", "type": "text", "default": "" }
+      { "name": "first_name", "label": "First name (label on photo)", "type": "text", "default": "" }
     ],
     "default": [
       {
         "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "Ashton West" },
-        "name": "Ashton"
+        "first_name": "Ashton"
       },
       {
         "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "William Patterson" },
-        "name": "William"
+        "first_name": "William"
       },
       {
         "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "McKala Bracci" },
-        "name": "McKala"
+        "first_name": "McKala"
       },
       {
         "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970481a3b4271aa5785b47_Screenshot%202026-09-01%20122753.png", "alt": "Jeff Gorsuch" },
-        "name": "Jeff"
+        "first_name": "Jeff"
       }
     ]
   }
