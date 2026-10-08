@@ -47,5 +47,14 @@ Open any version: `git checkout v4` (return with `git checkout main`).
 
 ## HubSpot build
 
-`hubspot/cover-cincy-lp/` mirrors the `cover-cincy-lp` folder in the HubSpot Design Manager.
-Create a landing page from the **Cover Cincy - Booking Landing Page** template; every section is editable in the page editor.
+`hubspot/cover-cincy-lp/` is a HubSpot theme that mirrors the `cover-cincy-lp` folder in the Design Manager.
+
+- **Content** (text, images, links, icons, reviews, calendar link): click any section in the page editor.
+- **Design** (brand color, dark/light backgrounds, text color, fonts, button roundness): page editor → *Global theme styles*. Hover and accent shades derive automatically from the brand color.
+- **Images** live in the File Manager folder `cover-cincy-lp` (sources in `hubspot/assets/`).
+
+Upload changes:
+
+```bash
+hs cms upload hubspot/cover-cincy-lp cover-cincy-lp
+```

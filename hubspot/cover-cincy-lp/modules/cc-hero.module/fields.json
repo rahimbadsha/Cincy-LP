@@ -1,8 +1,28 @@
 [
-  { "name": "headline", "label": "Headline (white part)", "type": "text", "default": "Health insurance help from someone who" },
-  { "name": "headline_accent", "label": "Headline (red part)", "type": "text", "default": "actually works for you." },
-  { "name": "subhead", "label": "Subheadline", "type": "text", "default": "Local, independent, since 1988. Free consult." },
-  { "name": "cta_text", "label": "Button text", "type": "text", "default": "Book Your Free Consult" },
+  {
+    "name": "headline",
+    "label": "Headline (white part)",
+    "type": "text",
+    "default": "Health insurance help from someone who"
+  },
+  {
+    "name": "headline_accent",
+    "label": "Headline (red part)",
+    "type": "text",
+    "default": "actually works for you."
+  },
+  {
+    "name": "subhead",
+    "label": "Subheadline",
+    "type": "text",
+    "default": "Local, independent, since 1988. Free consult."
+  },
+  {
+    "name": "cta_text",
+    "label": "Button text",
+    "type": "text",
+    "default": "Book Your Free Consult"
+  },
   {
     "name": "cta_link",
     "label": "Button link",
@@ -10,33 +30,97 @@
     "type": "text",
     "default": "#book"
   },
-  { "name": "microcopy", "label": "Text under button", "type": "text", "default": "Free · 15 minutes · No obligation" },
+  {
+    "name": "microcopy",
+    "label": "Text under button",
+    "type": "text",
+    "default": "Free · 15 minutes · No obligation"
+  },
   {
     "name": "badges",
     "label": "Trust badges",
     "type": "group",
-    "occurrence": { "min": 0, "max": 4, "default": 3 },
+    "occurrence": {
+      "min": 0,
+      "max": 4,
+      "default": 3
+    },
     "children": [
       {
         "name": "icon",
         "label": "Icon",
-        "type": "choice",
-        "display": "select",
-        "choices": [["star", "Star"], ["calendar", "Calendar"], ["shield", "Shield"]],
-        "default": "star"
+        "type": "icon",
+        "icon_set": "fontawesome-6.4.2",
+        "default": {
+          "name": "star",
+          "unicode": "f005",
+          "type": "SOLID"
+        }
       },
-      { "name": "text_before", "label": "Text before bold", "type": "text", "default": "" },
-      { "name": "text_bold", "label": "Bold text", "type": "text", "default": "" },
-      { "name": "text_after", "label": "Text after bold", "type": "text", "default": "" }
+      {
+        "name": "text_before",
+        "label": "Text before bold",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "text_bold",
+        "label": "Bold text",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "text_after",
+        "label": "Text after bold",
+        "type": "text",
+        "default": ""
+      }
     ],
     "default": [
-      { "icon": "star", "text_before": "", "text_bold": "A+", "text_after": " BBB" },
-      { "icon": "calendar", "text_before": "Since ", "text_bold": "1988", "text_after": "" },
-      { "icon": "shield", "text_before": "Licensed ", "text_bold": "Nationwide", "text_after": "" }
+      {
+        "icon": {
+          "name": "star",
+          "unicode": "f005",
+          "type": "SOLID"
+        },
+        "text_before": "",
+        "text_bold": "A+",
+        "text_after": " BBB"
+      },
+      {
+        "icon": {
+          "name": "calendar",
+          "unicode": "f133",
+          "type": "REGULAR"
+        },
+        "text_before": "Since ",
+        "text_bold": "1988",
+        "text_after": ""
+      },
+      {
+        "icon": {
+          "name": "shield-halved",
+          "unicode": "f3ed",
+          "type": "SOLID"
+        },
+        "text_before": "Licensed ",
+        "text_bold": "Nationwide",
+        "text_after": ""
+      }
     ]
   },
-  { "name": "show_team", "label": "Show broker team card", "type": "boolean", "default": true },
-  { "name": "team_title", "label": "Team card title", "type": "text", "default": "Meet your local brokers" },
+  {
+    "name": "show_team",
+    "label": "Show broker team card",
+    "type": "boolean",
+    "default": true
+  },
+  {
+    "name": "team_title",
+    "label": "Team card title",
+    "type": "text",
+    "default": "Meet your local brokers"
+  },
   {
     "name": "team_note",
     "label": "Team card note",
@@ -47,7 +131,11 @@
     "name": "team",
     "label": "Brokers",
     "type": "group",
-    "occurrence": { "min": 1, "max": 4, "default": 4 },
+    "occurrence": {
+      "min": 1,
+      "max": 4,
+      "default": 4
+    },
     "children": [
       {
         "name": "photo",
@@ -55,25 +143,45 @@
         "type": "image",
         "resizable": false,
         "responsive": true,
-        "default": { "src": "", "alt": "" }
+        "default": {
+          "src": "",
+          "alt": ""
+        }
       },
-      { "name": "first_name", "label": "First name (label on photo)", "type": "text", "default": "" }
+      {
+        "name": "first_name",
+        "label": "First name (label on photo)",
+        "type": "text",
+        "default": ""
+      }
     ],
     "default": [
       {
-        "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "Ashton West" },
+        "photo": {
+          "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-ashton-west.jpg",
+          "alt": "Ashton West"
+        },
         "first_name": "Ashton"
       },
       {
-        "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "William Patterson" },
+        "photo": {
+          "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-william-patterson.jpg",
+          "alt": "William Patterson"
+        },
         "first_name": "William"
       },
       {
-        "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "McKala Bracci" },
+        "photo": {
+          "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-mckala-bracci.jpg",
+          "alt": "McKala Bracci"
+        },
         "first_name": "McKala"
       },
       {
-        "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970481a3b4271aa5785b47_Screenshot%202026-09-01%20122753.png", "alt": "Jeff Gorsuch" },
+        "photo": {
+          "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-jeff-gorsuch.jpg",
+          "alt": "Jeff Gorsuch"
+        },
         "first_name": "Jeff"
       }
     ]

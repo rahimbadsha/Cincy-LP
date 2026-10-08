@@ -18,7 +18,7 @@
         <ul class="cc-badges" aria-label="Why trust us">
           {% for badge in module.badges %}
             <li class="cc-badge">
-              <svg aria-hidden="true" width="18" height="18"><use href="#i-{{ badge.icon }}"/></svg>
+              {% icon name="{{ badge.icon.name }}" style="{{ badge.icon.type }}" unicode="{{ badge.icon.unicode }}" icon_set="fontawesome-6.4.2" purpose="decorative" %}
               <span>{{ badge.text_before }}{% if badge.text_bold %}<strong>{{ badge.text_bold }}</strong>{% endif %}{{ badge.text_after }}</span>
             </li>
           {% endfor %}

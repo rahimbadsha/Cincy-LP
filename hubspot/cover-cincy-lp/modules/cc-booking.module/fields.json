@@ -46,10 +46,10 @@
       }
     ],
     "default": [
-      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a97048027ded20bd39470ec_Screenshot%202026-09-01%20122435.png", "alt": "" } },
-      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a9704ce765e512f5ac7109d_will.png", "alt": "" } },
-      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970480382d820e9687b45e_Screenshot%202026-09-01%20121347.png", "alt": "" } },
-      { "photo": { "src": "https://cdn.prod.website-files.com/66312bd2817edca74846e0b4/6a970481a3b4271aa5785b47_Screenshot%202026-09-01%20122753.png", "alt": "" } }
+      { "photo": { "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-ashton-west.jpg", "alt": "" } },
+      { "photo": { "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-william-patterson.jpg", "alt": "" } },
+      { "photo": { "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-mckala-bracci.jpg", "alt": "" } },
+      { "photo": { "src": "https://8146581.fs1.hubspotusercontent-na1.net/hubfs/8146581/cover-cincy-lp/agent-jeff-gorsuch.jpg", "alt": "" } }
     ]
   },
   { "name": "who_text", "label": "Broker line", "type": "text", "default": "You'll meet with a" },

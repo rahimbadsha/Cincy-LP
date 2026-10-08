@@ -1,0 +1,75 @@
+[
+  {
+    "name": "colors",
+    "label": "Colors",
+    "type": "group",
+    "children": [
+      {
+        "name": "brand",
+        "label": "Brand color",
+        "help_text": "Buttons, highlights and accents. Hover and glow shades update automatically.",
+        "type": "color",
+        "default": { "color": "#a72a2c", "opacity": 100 }
+      },
+      {
+        "name": "dark",
+        "label": "Dark background",
+        "help_text": "Hero and footer background.",
+        "type": "color",
+        "default": { "color": "#0f0f10", "opacity": 100 }
+      },
+      {
+        "name": "text",
+        "label": "Text color",
+        "type": "color",
+        "default": { "color": "#1a1a1a", "opacity": 100 }
+      },
+      {
+        "name": "light",
+        "label": "Light background",
+        "help_text": "Testimonials and booking panel background.",
+        "type": "color",
+        "default": { "color": "#f3f3f4", "opacity": 100 }
+      }
+    ]
+  },
+  {
+    "name": "typography",
+    "label": "Fonts",
+    "type": "group",
+    "children": [
+      {
+        "name": "heading_font",
+        "label": "Heading font",
+        "type": "font",
+        "load_external_fonts": true,
+        "default": { "font": "Space Grotesk", "font_set": "GOOGLE", "fallback": "sans-serif", "variant": "700" }
+      },
+      {
+        "name": "body_font",
+        "label": "Body font",
+        "type": "font",
+        "load_external_fonts": true,
+        "default": { "font": "Inter", "font_set": "GOOGLE", "fallback": "sans-serif", "variant": "regular" }
+      }
+    ]
+  },
+  {
+    "name": "buttons",
+    "label": "Buttons",
+    "type": "group",
+    "children": [
+      {
+        "name": "radius",
+        "label": "Corner roundness",
+        "type": "number",
+        "display": "slider",
+        "min": 0,
+        "max": 32,
+        "step": 1,
+        "suffix": "px",
+        "default": 12
+      }
+    ]
+  }
+]
